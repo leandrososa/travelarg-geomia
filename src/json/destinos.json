@@ -1,0 +1,178 @@
+{
+    "destinos":[
+        {
+            "c": "Buenos Aires",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["amigos", "ciudad", "vidanocturna", "shopping", "cultura" ]
+        },
+        {
+            "c": "Rosario",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["familia", "ciudad", "excursiones", "cultura"]
+        },
+        {
+            "c": "Mar del Plata",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["familia", "amigos", "ciudad", "romantica", "vidanocturna"]
+        },
+        {
+            "c": "Córdoba",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["familia", "amigos", "campo", "montana", "ciudad", "vidanocturna"]
+        },
+        {
+            "c": "Ushuaia",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["ciudad", "excursiones"]
+        },
+        {
+            "c": "Salta",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["familia", "ciudad", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "Bariloche",
+            "p": "Argentina",
+            "cat": "arg",
+            "tags": ["amigos", "romantica", "vidanocturna", "excursiones", "esqui"]
+        },
+        {
+            "c": "Rio de Janeiro",
+            "p": "Brasil",
+            "cat": "sam",
+            "tags": ["familia", "amigos", "playa", "excursiones", "vidanocturna"]
+        },
+        {
+            "c": "Santiago de Chile",
+            "p": "Chile",
+            "cat": "sam",
+            "tags": ["familia", "amigos", "montana", "vidanocturna"]
+        },
+        {
+            "c": "Machu Picchu",
+            "p": "Perú",
+            "cat": "sam",
+            "tags": ["familia", "amigos", "montana", "excursiones", "cultura"]
+        },
+        {
+            "c": "Quito",
+            "p": "Ecuador",
+            "cat": "sam",
+            "tags": ["amigos", "montana", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "La Paz",
+            "p": "Bolivia",
+            "cat": "sam",
+            "tags": ["amigos", "montana", "cultura"]
+        },
+        {
+            "c": "Medellín",
+            "p": "Colombia",
+            "cat": "sam",
+            "tags": ["amigos", "romantica", "ciudad", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "Nueva York",
+            "p": "Estados Unidos",
+            "cat": "cnam",
+            "tags": ["familia", "amigos", "romantica", "ciudad", "vidanocturna", "shopping"]
+        },
+        {
+            "c": "San Francisco",
+            "p": "Estados Unidos",
+            "cat": "cnam",
+            "tags": ["amigos", "romantica", "ciudad", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "Vancouver",
+            "p": "Canadá",
+            "cat": "cnam",
+            "tags": ["amigos", "ciudad", "playa", "montana", "excursiones", "vidanocturna", "cultura", "esqui"]
+        },
+        {
+            "c": "Ciudad de México",
+            "p": "México",
+            "cat": "cnam",
+            "tags": ["familia", "amigos", "ciudad", "playa", "cultura"]
+        },
+        {
+            "c": "La Habana",
+            "p": "Cuba",
+            "cat": "cnam",
+            "tags": ["amigos", "romantica", "ciudad", "playa", "cultura"]
+        },
+        {
+            "c": "Ciudad de Belice",
+            "p": "Belice",
+            "cat": "cnam",
+            "tags": ["amigos", "romantica", "excursiones", "playa"]
+        },
+        {
+            "c": "Londres",
+            "p": "Inglaterra",
+            "cat": "eur",
+            "tags": ["amigos", "romantica", "ciudad", "vidanocturna", "shopping", "cultura"]
+        },
+        {
+            "c": "París",
+            "p": "Francia",
+            "cat": "eur",
+            "tags": ["romantica", "ciudad", "excursiones", "vidanocturna", "shopping", "cultura"]
+        },
+        {
+            "c": "Roma",
+            "p": "Italia",
+            "cat": "eur",
+            "tags": ["familia", "amigos", "romantica", "ciudad", "excursiones", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "Barcelona",
+            "p": "España",
+            "cat": "eur",
+            "tags": ["amigos", "romantica", "ciudad", "playa", "vidanocturna", "shopping", "cultura"]
+        },
+        {
+            "c": "Praga",
+            "p": "República Checa",
+            "cat": "eur",
+            "tags": ["familia", "romantica", "ciudad", "excursiones", "vidanocturna", "cultura"]
+        },
+        {
+            "c": "Bangkok",
+            "p": "Tailandia",
+            "cat": "rest",
+            "tags": ["amigos", "ciudad", "vidanocturna", "cultura", "shopping"]
+        },
+        {
+            "c": "Hong Kong",
+            "p": "Hong Kong",
+            "cat": "rest",
+            "tags": ["amigos", "ciudad", "vidanocturna", "cultura", "shopping"]
+        },
+        {
+            "c": "Dubái",
+            "p": "Emiratos Árabes Unidos",
+            "cat": "rest",
+            "tags": ["amigos", "ciudad", "vidanocturna", "playa", "shopping"]
+        },
+        {
+            "c": "Shangái",
+            "p": "China",
+            "cat": "rest",
+            "tags": ["amigos", "ciudad", "vidanocturna", "shopping", "cultura"]
+        },
+        {
+            "c": "Tokio",
+            "p": "Japón",
+            "cat": "rest",
+            "tags": ["amigos", "romantica", "ciudad", "vidanocturna", "playa", "cultura"]
+        }
+    ]
+}

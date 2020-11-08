@@ -1,0 +1,69 @@
+// Sobreescritura de variables sass p/ estilos Geomia
+$wh: #fff;
+$gr2: #d7d7d7;
+$gr1: #a6a6a6;
+$gr: #666;
+$bl: #333;
+$ta-magenta: #E969B5;
+$ta-light-blue: #00AEEF;
+$ta-green: #1CBBB4;
+$ta-amber: #F5AD0D;
+$ta-blue: #0067A1;
+
+//Gradients
+$blue-gradient: linear-gradient(180deg, $ta-blue 0%, transparentize($ta-light-blue, 1) 52.08%);
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 476px,
+  md: 668px,
+  lg: 1000px,
+  xl: 1300px
+);
+
+// Fonts variables
+$isidora: 'IsidoraSans', sans-serif;
+$opensans: 'Open sans', sans-serif;
+
+
+//Font family
+$body-font-family: $isidora;
+
+//App bar
+
+$app-bar-elevation: 0;
+
+
+//Botones
+
+$btn-font-sizes: 
+    (
+      'x-small': .7rem,
+      'small': .85rem,
+      'default': 1rem,
+      'large': 1rem,
+      'x-large': 1.15rem
+    );
+$btn-font-weight: 600;
+$btn-font-family: $isidora, sans-serif;
+$btn-text-transform: none;
+$btn-letter-spacing: normal;
+
+// Tabs
+
+$tab-font-family: $isidora;
+
+//Shadows
+
+$nav-shadow: 0 4px 24px rgba(0,0,0,.25);
+$search-shadow: 0 4px 14px rgba(0,0,0,.25);
+
+// Border-radius
+
+$br-normal: 6px;
+$br-accented: 100px;
+
+// Card
+
+$card-padding: 14px;

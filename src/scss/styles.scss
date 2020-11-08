@@ -1,0 +1,71 @@
+@import '_fonts.scss';
+//@import 'travelicons/style.scss';
+
+// Variables independientes
+
+
+// Utilidades
+
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+// Miscelaneas
+
+.blue-misc{
+    background-color: $ta-blue;
+    opacity: .14;
+    position: absolute;
+    right: 0;
+    height: 45vh;
+}
+
+// Encabezados
+
+.section-title{
+    font-size: 32px;
+    margin-top: 32px;
+    font-weight: 600;
+    color: $ta-green;
+
+    &.magenta{
+        color: $ta-magenta;
+    }
+}
+
+.section-subtitle{
+
+    font-size: 18px;
+    font-weight: 500;
+    color: $gr;
+}
+
+
+
+//Tags
+
+.tag{
+
+    span[class^="ticon-"]{
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    border-radius: $br-normal;
+    background-color: $gr;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 10px;
+    font-weight: 500;
+    margin-right: 18px;
+    user-select: none;
+    cursor: pointer;
+}

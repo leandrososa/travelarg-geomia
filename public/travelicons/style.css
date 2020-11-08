@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'travelicons';
+  src:  url('fonts/travelicons.eot?tcyjr7');
+  src:  url('fonts/travelicons.eot?tcyjr7#iefix') format('embedded-opentype'),
+    url('fonts/travelicons.ttf?tcyjr7') format('truetype'),
+    url('fonts/travelicons.woff?tcyjr7') format('woff'),
+    url('fonts/travelicons.svg?tcyjr7#travelicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ticon-"], [class*=" ticon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'travelicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ticon-night:before {
+  content: "\e901";
+}
+.ticon-bag:before {
+  content: "\e907";
+}
+.ticon-monument:before {
+  content: "\e91a";
+}
+.ticon-phone-01:before {
+  content: "\e902";
+}
+.ticon-contact:before {
+  content: "\e903";
+}
+.ticon-mails:before {
+  content: "\e904";
+}
+.ticon-handsworld:before {
+  content: "\e905";
+}
+.ticon-article:before {
+  content: "\e906";
+}
+.ticon-building:before {
+  content: "\e908";
+}
+.ticon-calendar:before {
+  content: "\e909";
+}
+.ticon-chat:before {
+  content: "\e90a";
+}
+.ticon-chevron:before {
+  content: "\e90b";
+}
+.ticon-circlecheck:before {
+  content: "\e90c";
+}
+.ticon-close:before {
+  content: "\e90d";
+}
+.ticon-compass:before {
+  content: "\e900";
+}
+.ticon-emptystar:before {
+  content: "\e90e";
+}
+.ticon-facebook:before {
+  content: "\e90f";
+}
+.ticon-family:before {
+  content: "\e910";
+}
+.ticon-fence:before {
+  content: "\e911";
+}
+.ticon-friends:before {
+  content: "\e912";
+}
+.ticon-geomia:before {
+  content: "\e913";
+}
+.ticon-heart:before {
+  content: "\e914";
+}
+.ticon-inbox:before {
+  content: "\e915";
+}
+.ticon-magnifier:before {
+  content: "\e916";
+}
+.ticon-marker:before {
+  content: "\e917";
+}
+.ticon-mountain:before {
+  content: "\e918";
+}
+.ticon-newreview:before {
+  content: "\e919";
+}
+.ticon-pencil:before {
+  content: "\e91b";
+}
+.ticon-person:before {
+  content: "\e91c";
+}
+.ticon-send:before {
+  content: "\e91d";
+}
+.ticon-skigoggles:before {
+  content: "\e91e";
+}
+.ticon-star:before {
+  content: "\e91f";
+}
+.ticon-sun:before {
+  content: "\e920";
+}
+.ticon-twitter:before {
+  content: "\e921";
+}
+.ticon-whatsapp:before {
+  content: "\e922";
+}
