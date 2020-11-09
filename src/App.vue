@@ -52,6 +52,7 @@
     </v-app-bar> -->
     <Navigation></Navigation>
     <v-main>
+      <GeomiaHeader></GeomiaHeader>
       <router-view />
     </v-main>
   </v-app>
@@ -59,11 +60,13 @@
 
 <script>
   import Navigation from './components/Navigation.vue';
+  import GeomiaHeader from './components/GeomiaHeader.vue';
 
   export default {
     name: 'app',
     components: {
-      Navigation
+      Navigation,
+      GeomiaHeader
     }
   }
   
@@ -75,5 +78,9 @@
 
   nav.nav + main{
     margin-left: 100px;
+  }
+
+  nav.nav + main  header{
+    left: 100px;
   }
 </style>
