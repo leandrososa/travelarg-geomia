@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'travelicons';
-  src:  url('fonts/travelicons.eot?tcyjr7');
-  src:  url('fonts/travelicons.eot?tcyjr7#iefix') format('embedded-opentype'),
-    url('fonts/travelicons.ttf?tcyjr7') format('truetype'),
-    url('fonts/travelicons.woff?tcyjr7') format('woff'),
-    url('fonts/travelicons.svg?tcyjr7#travelicons') format('svg');
+  src:  url('fonts/travelicons.eot?psjo0w');
+  src:  url('fonts/travelicons.eot?psjo0w#iefix') format('embedded-opentype'),
+    url('fonts/travelicons.ttf?psjo0w') format('truetype'),
+    url('fonts/travelicons.woff?psjo0w') format('woff'),
+    url('fonts/travelicons.svg?psjo0w#travelicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ticon-login:before {
+  content: "\e923";
+}
 .ticon-night:before {
   content: "\e901";
 }
