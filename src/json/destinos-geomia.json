@@ -1,0 +1,87 @@
+{
+    "destinos":[
+        {
+            "c": "Bariloche",
+            "p": "Rio Negro",
+            "img": "bariloche"
+        },
+        {
+            "c": "Mar del Plata",
+            "p": "Buenos Aires",
+            "img": "mardelplata"
+
+        },
+        {
+            "c": "Ciudad de Córdoba",
+            "p": "Córdoba",
+            "img": "cordoba"
+        },
+        {
+            "c": "La Plata",
+            "p": "Buenos Aires",
+            "img": "laplata"
+        },
+        {
+            "c": "Ciudad Autónoma de Buenos Aires",
+            "p": "Buenos Aires",
+            "img": "caba"
+        },
+        {
+            "c": "Trelew",
+            "p": "Chubut",
+            "img": "trelew"
+        },
+        {
+            "c": "Ushuaia",
+            "p": "Tierra del Fuego",
+            "img": "ushuaia"
+        },
+        {
+            "c": "Salta",
+            "p": "Salta",
+            "img": "salta"
+        },
+        {
+            "c": "San Clemente del Tuyú",
+            "p": "Buenos Aires",
+            "img": "sanclemente"
+        },
+        {
+            "c": "Villa Carlos Paz",
+            "p": "Córdoba",
+            "img": "villacarlospaz"
+        },
+        {
+            "c": "Puerto Madryn",
+            "p": "Chubut",
+            "img": "puertomadryn"
+        },
+        {
+            "c": "Tilcara",
+            "p": "Jujuy",
+            "img": "tilcara"
+        },
+        {
+            "c": "San Miguel de Tucumán",
+            "p": "Tucumán",
+            "img": "sanmiguel"
+        },
+        {
+            "c": "Mendoza",
+            "p": "Mendoza",
+            "img": "mendoza"
+        },
+        {
+            "c": "Necochea",
+            "p": "Buenos Aires",
+            "img": "necochea"
+        },
+        {
+            "c": "Pinamar",
+            "p": "Buenos Aires",
+            "img": "pinamar"
+        }
+        
+        
+    ]
+}
