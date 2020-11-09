@@ -12,6 +12,8 @@ $ta-blue: #0067A1;
 
 //Gradients
 $blue-gradient: linear-gradient(180deg, $ta-blue 0%, transparentize($ta-light-blue, 1) 52.08%);
+$white-gradient: linear-gradient(180deg, transparentize($wh, .8) 40%, transparentize($wh, 1) 100%);
+$safe-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%);
 
 // Breakpoints
 $grid-breakpoints: (
@@ -53,6 +55,7 @@ $btn-letter-spacing: normal;
 // Tabs
 
 $tab-font-family: $isidora;
+$tabs-bar-height: 34px;
 
 //Shadows
 
@@ -67,3 +70,8 @@ $br-accented: 100px;
 // Card
 
 $card-padding: 14px;
+
+// Inputs
+
+//$text-field-outlined-fieldset-padding: 26px;
+
