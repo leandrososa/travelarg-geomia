@@ -1,26 +1,26 @@
 <template>
     <nav class="nav">
         <div class="avatar-wrapper">
-            <div v-ripple="{ class: 'white--text' }" class="avatar">
-            </div>
+            <router-link to="/perfil" v-ripple="{ class: 'white--text' }" class="avatar">
+            </router-link>
         </div>
         <ul>
-            <li to="/destinos" v-ripple>
+            <router-link tag="li" to="/destinos" v-ripple>
                 <span class="ticon-marker"></span>
                 <p>Destinos</p>
-            </li>
-            <li v-ripple>
+            </router-link>
+            <router-link tag="li" to="/articulos" v-ripple>
                 <span class="ticon-article"></span>
                 <p>Art&iacute;culos</p>
-            </li>
-            <li v-ripple>
+            </router-link>
+            <router-link tag="li" to="/geogurus" v-ripple>
                 <span class="ticon-person"></span>
                 <p>Geogur&uacute;s</p>
-            </li>
-            <li class="bottom" v-ripple>
+            </router-link>
+            <router-link tag="li" to="" class="bottom" v-ripple>
                 <span class="ticon-inbox"></span>
                 <p>Inbox</p>
-            </li>
+            </router-link>
         </ul>
     </nav>
 </template>
