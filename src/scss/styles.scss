@@ -3,6 +3,17 @@
 
 // Variables independientes
 
+// Titulos
+
+h1.fold-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2.fold-title{
+    font-size: 42px;
+    font-weight: 500;
+}
 
 // Utilidades
 
@@ -16,6 +27,12 @@
 
 .right{
     text-align: right;
+}
+// Folds
+
+.fold-image{
+    height: 80vh;
+    border-bottom-right-radius: 215px;
 }
 
 // Miscelaneas
@@ -58,7 +75,8 @@
         display: inline-block;
         margin-right: 6px;
     }
-
+    
+    text-decoration: none;
     border-radius: $br-normal;
     background-color: $gr;
     display: inline-block;
@@ -69,3 +87,19 @@
     user-select: none;
     cursor: pointer;
 }
+.v-application a.tag{
+    color: $wh;
+}
+
+// Tabs
+
+.v-tabs{
+    .v-tab{
+        text-transform: none;
+        letter-spacing: normal;
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+}
+
