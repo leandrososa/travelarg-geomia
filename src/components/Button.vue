@@ -1,5 +1,5 @@
 <template>
-    <v-btn :color='color' :class="{ 'con-padding' : padding }" :elevation='elevation' :x-large='xlarge' :large='large' rounded><slot></slot></v-btn>
+    <v-btn :color='color' :class="{ 'con-padding' : padding, 'con-padding-sm' : paddingSm }" :elevation='elevation' :x-large='xlarge' :large='large' :to="to" rounded><slot></slot></v-btn>
 </template>
 <script>
 export default {
@@ -19,7 +19,15 @@ export default {
             type: Boolean,
             default: false
         },
+        'to': {
+            type: String,
+            default: ''
+        },
         'padding': {
+            type: Boolean,
+            default: false
+        },
+        'paddingSm': {
             type: Boolean,
             default: false
         }
@@ -29,5 +37,13 @@ export default {
 <style>
     .v-btn.con-padding{
         padding: 0 50px !important
+    }
+
+    .v-btn.con-padding-sm{
+        padding: 0 32px !important
+    }
+
+    .v-btn span[class^="ticon-"]{
+        margin-right: 16px;
     }
 </style>
