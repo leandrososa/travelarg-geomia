@@ -7,6 +7,10 @@
 
 h1.fold-title{
     font-size: 48px;
+    font-weight: 500;
+}
+
+h1.fold-title a{
     font-weight: 700;
 }
 
@@ -43,6 +47,11 @@ h2.fold-title{
     position: absolute;
     right: 0;
     height: 45vh;
+    
+    &.from-left{
+        left: 0;
+        right: auto;
+    }
 }
 
 // Encabezados
@@ -78,7 +87,7 @@ h2.fold-title{
     
     text-decoration: none;
     border-radius: $br-normal;
-    background-color: $gr;
+    background-color: rgba(0,0,0,.6);
     display: inline-block;
     line-height: 32px;
     padding: 0 10px;
