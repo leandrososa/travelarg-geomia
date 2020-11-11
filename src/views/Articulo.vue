@@ -122,7 +122,7 @@
     <div class="social-links">
         <a href="#" class="social-link fb" v-ripple><span class="ticon-facebook"></span></a>
         <a href="#" class="social-link tw" v-ripple><span class="ticon-twitter"></span></a>
-        <a href="#" class="social-link wh" v-ripple><span class="ticon-whatsapp"></span></a>
+        <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" class="social-link wh" v-ripple><span class="ticon-whatsapp"></span></a>
     </div>
   </div>
 </template>
