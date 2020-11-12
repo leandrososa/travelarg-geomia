@@ -65,6 +65,10 @@ h2.fold-title{
     &.magenta{
         color: $ta-magenta;
     }
+
+    &.bl{
+        color: $bl;
+    }
 }
 
 .section-subtitle{
@@ -112,3 +116,13 @@ h2.fold-title{
     }
 }
 
+// Mixins 
+
+@mixin hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;  /*Chrome, Safari and Opera */
+      }
+}
