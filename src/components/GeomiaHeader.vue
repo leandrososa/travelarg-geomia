@@ -4,11 +4,11 @@
             <router-link class="geomia" to="/">
                 <span class="ticon-geomia"></span>
             </router-link>
-            <div v-if='logged' class="side-button logged-button">
-                <Button elevation="6" large paddingSm color="success"><span class="ticon-pencil"></span> Escribir reseña</Button>
-            </div>
-            <div v-else-if='geoguru' class="side-button contract-geoguru">
+            <div v-if="$route.path === '/perfilgeoguru'" class="side-button contract-geoguru">
                 <Button elevation="6" large paddingSm color="info" ><span class="ticon-chat"></span> Chatear con Estela</Button>
+            </div>
+            <div v-else-if='logged' class="side-button logged-button">
+                <Button elevation="6" large paddingSm color="success"><span class="ticon-pencil"></span> Escribir reseña</Button>
             </div>
             <div v-else class="side-button unlogged-button">
                 <Button elevation="6" large paddingSm><span class="ticon-login"></span> Ingresar</Button>
