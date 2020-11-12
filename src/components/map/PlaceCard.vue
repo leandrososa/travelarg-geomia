@@ -40,7 +40,6 @@
         width: 300px;
         position: relative;
         margin: 25px 0;
-        
 
         .marker-number{
             background-color: $ta-magenta;
