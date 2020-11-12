@@ -1,0 +1,37 @@
+{
+    "resenas":[
+        {
+            "name": "Lucia S.",
+            "rating": 4,
+            "body": "Excelentes medidas de higiene y seguridad por la pandemia. Al ingresar hay unos recipientes de alcohol en gel a pedal, luego están señalizados los asientos para respetar la distancia social de 1,5 mts y bancos de por medio. Hay carteles que informan sobre las precauciones a tomar y el uso de tapaboca en todo momento. Algo que me pareció nuevo y muy lindo es que de fondo había música melódica, que contribuía al clima de calma y paz. Hermoso momento y la Catedral es de las más hermosas del país ♡",
+            "img": "lucia.jpg"
+        },
+        {
+            "name": "Vanina A.",
+            "rating": 5,
+            "body": "Tuve la oportunidad de ir a confesarme y el sacerdote fué muy ameno con su charla y consejos. La Parroquia está muy bien cuidada y las misas tienen horarios para turistas. Detrás del altar hay una especie de 'museo' que cuenta la historia de la Catedral, y de los primeros pobladores e indios y cómo se llegó a como está ahora.",
+            "img": "vanina.jpg"
+
+        },
+        {
+            "name": "Luciano M.",
+            "rating": 4,
+            "body": "Muy linda catedral, y de más esta decir que tiene una hermosa vista al lago Nahuel Huapi. Arquitectura gótica. Siempre hay gran cantidad de personas sacándose fotos. Cuando fui estaba cerrada, no pude ingresar para conocerla por dentro. La plaza que la rodea está bien cuidada.",
+            "img": "mascolo.jpg"
+        },
+        {
+            "name": "Fernanda G.",
+            "rating": 3,
+            "body": "Tiene la impronta de Bariloche. Vale la pena conocerla! Por ser tan grande, no resulta cálida no acogedora.",
+            "img": "fernanda.jpeg"
+        },
+        {
+            "name": "Máximo F.",
+            "rating": 4,
+            "body": "Amo la arquitectura gótica, es majestuosa, imponente y bella. Hay pinturas de la cristianiciación de los pueblos originarios americanos, nuestra cristianiciación. Soy cristiano, y me encanta ver las raíces de mi religión y también de otras religiones. Es un lugar que no se puede pasar por alto.",
+            "img": "maximo.jpg"
+        }
+        
+        
+    ]
+}

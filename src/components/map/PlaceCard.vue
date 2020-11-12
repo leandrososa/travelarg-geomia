@@ -7,8 +7,8 @@
                 {{name}}
             </span>
             <div class="place-stars">
-                    <span v-for="n in stars" :key="n" class="ticon-star"></span>
-                    <span v-for="m in (5 - stars)" :key="m" class="ticon-emptystar"></span>
+                    <span v-for="n in stars" :key="'star-' + n" class="ticon-star"></span>
+                    <span v-for="m in (5 - stars)" :key="'emptystar-' + m" class="ticon-emptystar"></span>
             </div>
 
         </div>
@@ -38,8 +38,9 @@
 
     .place-content{
         width: 300px;
-        min-height: 130px;
         position: relative;
+        margin: 25px 0;
+        
 
         .marker-number{
             background-color: $ta-magenta;
@@ -61,6 +62,7 @@
 
         .place-card{
             width: 100%;
+            min-height: 130px;
             display: inline-block;
             border-radius: $br-normal;
             border-top-left-radius: $br-accented;
@@ -68,6 +70,7 @@
             position: relative;
             padding: 22px 22px 22px 122px;
             overflow: hidden;
+            cursor: pointer;
 
             img{
                 position: absolute;
@@ -78,6 +81,7 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center center;
+                user-select: none;
             
             }
 
@@ -85,9 +89,17 @@
                 font-weight: 600;
                 font-size: 14px;
                 user-select: none;
+                margin-bottom: 22px;
+                display: inline-block;
             }
 
             .place-stars{
+
+                position: absolute;
+                left: 122px;
+                bottom: 10px;
+                right: 22px;
+
                 span[class^="ticon-"]{
                     font-size: 24px;
                     color: $ta-green;
