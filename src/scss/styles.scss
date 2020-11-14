@@ -120,6 +120,76 @@ h2.fold-title{
     }
 }
 
+// Modal
+
+.v-dialog.br-b-r-100{
+    border-radius: $br-normal;
+    border-bottom-right-radius: $br-accented;
+}
+
+.ta-modal{
+    border-radius: $br-normal;
+    border-bottom-right-radius: $br-accented;
+    min-width: 500px;
+    padding: 60px;
+    position: relative;
+    background-color: $wh;
+
+    &.padding-100{
+        padding: 60px 100px;
+    }
+
+
+    & > span.ticon-close{
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        color: $gr1;
+        cursor: pointer;
+    }
+
+    h2.modal-title{
+        color: $ta-green;
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    h3.modal-title{
+        color: $ta-green;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    h4.modal-title{
+        color: $ta-green;
+        font-size: 24px;
+        font-weight: 600;
+
+        &.magenta{
+            color: $ta-magenta;
+        }
+    }
+
+    .separator{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 30px 0;
+
+        &:before, &:after{
+            content: '';
+            background-color: $gr1;
+            height: 1px;
+            margin: 10px 0;
+        }
+
+        .separator-text{
+            color: $gr1;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
 // Mixins 
 
 @mixin hide-scrollbar {
