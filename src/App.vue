@@ -53,7 +53,9 @@
     <Navigation></Navigation>
     <v-main>
       <GeomiaHeader></GeomiaHeader>
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
     </v-main>
   </v-app>
 </template>
@@ -82,5 +84,15 @@
 
   nav.nav + main  header{
     left: 100px;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active{
+    transition: opacity .3s;
+  }
+
+  .fade-enter,
+  .fade-leave-to{
+    opacity: 0;
   }
 </style>
