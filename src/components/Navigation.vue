@@ -1,7 +1,7 @@
 <template>
     <nav class="nav">
-        <div class="avatar-wrapper">
-            <router-link to="/perfil" v-ripple="{ class: 'white--text' }" class="avatar">
+        <div class="avatar-wrapper" >
+            <router-link to="/perfil" v-if="this.$session.exists('isLogged')" v-ripple="{ class: 'white--text' }" class="avatar">
             </router-link>
         </div>
         <ul>
@@ -17,7 +17,7 @@
                 <span class="ticon-person"></span>
                 <p>Geogur&uacute;s</p>
             </router-link>
-            <router-link tag="li" to="" class="bottom" v-ripple>
+            <router-link v-if="this.$session.exists('isLogged')" tag="li" to="" class="bottom" v-ripple>
                 <span class="ticon-inbox"></span>
                 <p>Inbox</p>
             </router-link>
