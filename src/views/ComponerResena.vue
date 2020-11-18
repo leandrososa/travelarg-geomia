@@ -181,28 +181,7 @@
 
         }
 
-        .ta-btn-radio{
-
-            input[type="radio"]{
-                visibility: hidden;
-            }
-
-            label{
-                font-size: 14px;
-                font-weight: 600;
-                border: 1px solid $gr;
-                border-radius: $br-normal;
-                padding: 4px 20px;
-                display: inline-block;
-                cursor: pointer;
-                user-select: none;
-            }
-
-            input[type="radio"]:checked + label{
-                background-color: $gr;
-                color: $wh;
-            }
-        }
+        
 
         .review-section-title{
             font-size: 18px;
