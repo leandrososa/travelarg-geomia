@@ -4,7 +4,10 @@
             <router-link class="geomia" to="/">
                 <span class="ticon-geomia"></span>
             </router-link>
-            <div v-if="$route.path === '/perfilgeoguru'" class="side-button contract-geoguru">
+            <div v-if="!this.$session.exists('isLogged')" class="side-button unlogged-button">
+                <Button elevation="6" large paddingSm @click.native.stop="login = true"><span class="ticon-login"></span> Ingresar</Button>
+            </div>
+            <div v-else-if="$route.path === '/perfilgeoguru'" class="side-button contract-geoguru">
                 <Button elevation="6" large paddingSm color="info" ><span class="ticon-chat"></span> Chatear con Estela</Button>
             </div>
             <div v-else-if="$route.path === '/nuevaresena' || $route.path === '/componerresena' || $route.path === '/resenacompleta'" class="side-button">
@@ -12,9 +15,6 @@
             </div>
             <div v-else-if="this.$session.exists('isLogged')" class="side-button logged-button">
                 <Button to="/nuevaresena" elevation="6" large paddingSm color="success"><span class="ticon-pencil"></span> Escribir reseña</Button>
-            </div>
-            <div v-else class="side-button unlogged-button">
-                <Button elevation="6" large paddingSm @click.native.stop="login = true"><span class="ticon-login"></span> Ingresar</Button>
             </div>
             <!-- LoginModal -->
             <v-dialog content-class="br-b-r-100" v-model="login" width="600"> 
