@@ -114,8 +114,8 @@
                             </div>
                         </div>
                         <div class="right">
-                            <Button class="mx-2" xlarge padding outlined color="primary">Cancelar</Button>
-                            <Button xlarge padding color="success">Publicar reseña</Button>
+                            <Button to="/nuevaresena" class="mx-2" xlarge padding outlined color="primary">Cancelar</Button>
+                            <Button to="/resenacompleta" xlarge padding color="success">Publicar reseña</Button>
                         </div>
                     </v-col>
                     <v-col cols="1">
@@ -124,7 +124,7 @@
                     <v-col cols="4">
                         <div class="right-aside">
                             <span class="ticon-newreview"></span>
-                            <p>No ten&eacute;s reseñas. ¡Agreg&aacute; alguna!</p>
+                            <p>No hay reseñas sobre este destino. <i>¡Eres el primero!</i></p>
                         </div>
                     </v-col>
                 </v-row>
@@ -301,8 +301,10 @@
         
         background-color: $gr2;
         text-align: center;
-        position: fixed;
-        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 82px;
+
 
         .ticon-newreview{
             font-size: 130px;
