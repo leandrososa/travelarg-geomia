@@ -1,11 +1,26 @@
 <script>
     import Button from "@/components/Button.vue";
     import GuruReview from "@/components/GuruReview.vue";
+    import Counter from "@/components/form/Counter.vue";
 
     export default {
+        data(){
+            return{
+                tripdetails: false,
+                guruplaces: ['San Carlos de Bariloche', 'Villa La Angostura', 'San Martín de los Andes'],
+                months2020: ['Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                months2021: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago'],
+                dayscounter: 7,
+                adultscounter: 2,
+                kidscounter: 0,
+                budget: ['< $20000', '$20000 - $50000', '$50000 - $80000', '> $80000']
+            }
+            
+        },
         components: {
             Button,
-            GuruReview
+            GuruReview,
+            Counter
         }
     }
 </script>
@@ -80,13 +95,94 @@
                             Chatear es completamente gratis, antes de decidirte si deseas contratar a el/la Geogurú. Si te decidís, podes acceder a la experiencia por <b>$7999</b>.
                         </h5>
                         <div class="center">
-                            <Button xlarge padding color="info"><span class="ticon-chat"></span> Chatear con Estela</Button>
-                            <Button xlarge padding color="primary"><span class="ticon-login"></span> Ingresar para chatear con Estela</Button>
+                            <Button v-if="this.$session.exists('isLogged')" @click.native.stop="tripdetails = true" xlarge padding color="info"><span class="ticon-chat"></span> Chatear con Estela</Button>
+                            <Button v-else xlarge padding color="primary"><span class="ticon-login"></span> Ingresar para chatear con Estela</Button>
                         </div>
                     </v-col>
                 </v-row>
             </v-container>
         </section>
+        <!-- tripdetails -->
+        <v-dialog content-class="br-b-r-100" v-model="tripdetails" width="1000"> 
+            <div class="ta-modal center">
+                <v-container>
+                    <h3 class="modal-title left" >Antes de chatear...</h3>
+                    <p class="modal-subtitle left">Da a <b>Estela</b> algunos detalles sobre tu viaje y preferencias</p>
+
+                    <v-row>
+                        <v-col cols="3">
+                            <span class="details-label">Lugar</span>
+                        </v-col>
+                        <v-col>
+                            <v-select style="font-weight:600" outlined :items="guruplaces"></v-select>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="3">
+                            <span class="details-label">Mes/es</span>
+                        </v-col>
+                        <v-col cols="4" >
+                            <span class="details-year">2020</span>
+                            <div class="ta-btn-radio left">
+                                <template v-for="month in months2020">
+                                    <input :key="month + '2020'" type="checkbox" :id="month + '2020'" name="months2020" :value="month + '2020'">
+                                    <label :key="month + '2020lbl'" v-ripple :for="month + '2020'">{{month}}</label>                  
+                                </template>
+                                
+                            </div>
+                        </v-col>
+                        <v-col cols="4" offset="1">
+                            <span class="details-year">2021</span>
+                            <div class="ta-btn-radio left">
+                                <template v-for="month in months2021">
+                                    <input :key="month + '2021'" type="checkbox" :id="month + '2021'" name="months2021" :value="month + '2021'">
+                                    <label :key="month + '2021lbl'" v-ripple :for="month + '2021'">{{month}}</label>                  
+                                </template>
+                                
+                            </div>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="3">
+                            <span class="details-label">D&iacute;as</span>
+                        </v-col>
+                        <v-col>
+                            <Counter label="día/s" :counter="dayscounter"></Counter>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="3">
+                            <span class="details-label">Viajeros</span>
+                        </v-col>
+                        <v-col cols="3">
+                            <Counter label="adulto/s" :counter="adultscounter"></Counter>
+                        </v-col>
+                        <v-col>
+                            <Counter label="niño/s" :counter="kidscounter"></Counter>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="3">
+                            <span class="details-label">Presupuesto</span>
+                            <p class="details-details">En pesos argentinos. Excluyendo pasajes y el costo de Geogurú.</p>
+                        </v-col>
+                        <v-col>
+                            <div class="ta-btn-radio left">
+                                <template v-for="(bud, index) in budget">
+                                    <input :key="'bud' + index" type="radio" :id="'bud' + index" name="budgets" :value="'bud' + index">
+                                    <label :key="'budlb' + index" v-ripple :for="'bud' + index">{{bud}}</label>                  
+                                </template>
+                                
+                            </div>
+                        </v-col>
+                    </v-row>
+                    <div class="right">
+                        <Button large color="info" @click.native="tripdetails = false"><span class="ticon-chat"></span> Empezar a chatear</Button>
+                    </div>
+                </v-container>
+            </div>
+        </v-dialog>
+        <!--  //////// tripdetails -->
     </div>
 </template>
 <style lang="scss" scoped>
@@ -197,5 +293,34 @@
                 }
             }
         }
+    }
+
+    .details-label{
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left; 
+    }
+
+    .details-year{
+        display: block;
+        font-size: 28px;
+        font-weight: 500;
+        color: $gr2;
+        text-align: left; 
+    }
+
+    .ta-btn-radio label{
+        padding: 4px 6px;
+        text-align: center;
+        min-width: 55px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+    }
+
+    .details-details{
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
     }
 </style>
