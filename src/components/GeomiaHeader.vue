@@ -22,7 +22,7 @@
                     <h3 class="modal-title" >Entra a tu cuenta</h3>
                     <TextInput dense singleline rounded placeholder="Correo Electrónico"></TextInput>
                     <TextInput dense singleline rounded placeholder="Contraseña" type="password"></TextInput>
-                    <Button large padding color="success" block>Ingresar</Button>
+                    <Button large padding color="success" @click.native.stop="doLogin(); window.location.reload();" block>Ingresar</Button>
                     <div class="separator">
                         <span class="separator-text">o conectate con</span>
                     </div>
