@@ -65,6 +65,13 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/ContratarGeoguru.vue")
   },
   {
+    path: "/geogurucontratado",
+    name: "GeoguruContratado",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/GeoguruContratado.vue")
+  }
+  
+  ,{
     path: "/nuevaresena",
     name: "NuevaResena",
     component: () =>
