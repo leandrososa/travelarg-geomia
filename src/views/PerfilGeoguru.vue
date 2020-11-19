@@ -8,7 +8,7 @@
             return{
                 tripdetails: false,
                 guruplaces: ['San Carlos de Bariloche', 'Villa La Angostura', 'San Martín de los Andes'],
-                months2020: ['Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                months2020: ['Nov', 'Dic'],
                 months2021: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago'],
                 dayscounter: 7,
                 adultscounter: 2,
@@ -177,7 +177,7 @@
                         </v-col>
                     </v-row>
                     <div class="right">
-                        <Button large color="info" @click.native="tripdetails = false"><span class="ticon-chat"></span> Empezar a chatear</Button>
+                        <Button to="/chatgeoguru" large color="info" @click.native="tripdetails = false"><span class="ticon-chat"></span> Empezar a chatear</Button>
                     </div>
                 </v-container>
             </div>
