@@ -53,14 +53,10 @@
                             <TextInput dense singleline rounded placeholder="Apellido"></TextInput>
                             <TextInput dense singleline rounded placeholder="Correo Electrónico"></TextInput>
                             <TextInput dense singleline rounded placeholder="Contraseña" type="password"></TextInput>
-                            <v-row class="information">
-                                <v-col>
-                                    <span class="ticon-info"></span>
-                                </v-col>
-                                <v-col>
-                                    <p>Al “Registrar”  aceptas los Terminos de uso y Politicas de privacidad de Geomia y TravelArg.</p>
-                                </v-col>
-                            </v-row>
+                            <div class="information">
+                                <span class="ticon-info"></span>
+                                <p>Al “Registrar”  aceptas los <u>Terminos de uso</u> y <u>Politicas de privacidad</u> de Geomia y TravelArg.</p>
+                            </div>
                             <Button large padding color="success" block @click.native.stop="register = false; confirmMail = true">Registrarse</Button>
                             
                         </v-col>
@@ -69,14 +65,12 @@
                                 <h4 class="modal-title magenta" >Quiero ser Geogur&uacute;</h4>
                                 <span class="ticon-handsworld"></span>
                                 <p class="guru-description">Convierte tu tiempo libre en ganancias, compartiendo tus experiencias a otros. ¡Es gratis!</p>
-                                <v-row class="information">
-                                    <v-col>
-                                        <span class="ticon-info"></span>
-                                    </v-col>
-                                    <v-col>
-                                        <p>Vamos a pedirte información de contacto adicional una vez confirmada la cuenta.</p>
-                                    </v-col>
-                                </v-row>
+                                
+                                <div class="information">
+                                    <span class="ticon-info"></span>
+                                    <p>Vamos a pedirte información de contacto adicional una vez confirmada la cuenta.</p>
+                                </div>
+                                <div style="height: 104px"></div>
                                 <Button large padding color="primary" block @click.native.stop="register = false; guruRegister = true">Registrarse como Geogur&uacute;</Button>
                             </div>
                         </v-col>
@@ -257,6 +251,31 @@
             font-size: 18px;
             font-weight: 600;
             color: $ta-green;
+        }
+
+        .information{
+            position: relative;
+            padding-left: 45px;
+            text-align: left;
+            margin: 32px 0;
+
+            span{
+                position: absolute;
+                font-size: 32px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $gr2;
+            }
+
+            p{
+                font-size: 14px;
+                font-style: italic;
+
+                u{
+                    font-weight: 600;
+                }
+            }
         }
     }
 </style>
