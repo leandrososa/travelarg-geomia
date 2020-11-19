@@ -12,6 +12,7 @@ export default {
 </script>
 <template>
     <div id="chatgeoguru">
+        
         <v-container fluid>
             <h3 class="mt-6">Mensajes</h3>
             <v-row>
@@ -59,8 +60,12 @@ export default {
         </v-container>
     </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 
+
+    .ticon-geomia{
+        display: none;
+    }
 
     h3{
         color: $ta-green;
