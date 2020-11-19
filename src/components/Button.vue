@@ -1,5 +1,5 @@
 <template>
-    <v-btn :color='color' :class="{ 'con-padding' : padding, 'con-padding-sm' : paddingSm }" :elevation='elevation' :x-large='xlarge' :large='large' :to="to" :block="block" rounded :outlined="outlined"><slot></slot></v-btn>
+    <v-btn :color='color' :class="{ 'con-padding' : padding, 'con-padding-sm' : paddingSm }" :elevation='elevation' :x-large='xlarge' :large='large' :to="to" :block="block" rounded :outlined="outlined" :fab="fab"><slot></slot></v-btn>
 </template>
 <script>
 export default {
@@ -36,6 +36,10 @@ export default {
             default: false
         },
         'outlined': {
+            type: Boolean,
+            default: false
+        },
+        'fab': {
             type: Boolean,
             default: false
         }
