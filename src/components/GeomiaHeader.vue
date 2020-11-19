@@ -10,7 +10,7 @@
             <div v-else-if="$route.path === '/perfilgeoguru'" class="side-button contract-geoguru">
                 <Button elevation="6" large paddingSm color="info" ><span class="ticon-chat"></span> Chatear con Estela</Button>
             </div>
-            <div v-else-if="$route.path === '/nuevaresena' || $route.path === '/componerresena' || $route.path === '/resenacompleta'" class="side-button">
+            <div v-else-if="$route.path === '/nuevaresena' || $route.path === '/componerresena' || $route.path === '/resenacompleta' || $route.path === '/chatgeoguru' || $route.path === '/contratargeoguru'" class="side-button">
 
             </div>
             <div v-else-if="this.$session.exists('isLogged')" class="side-button logged-button">
