@@ -1,7 +1,7 @@
 <template>
     <header>
         <v-container>
-            <router-link v-if="$route.path != '/chatgeoguru'" class="geomia" to="/">
+            <router-link v-if="$route.path != '/chatgeoguru' && $route.path != '/'" class="geomia" to="/">
                 <span class="ticon-geomia"></span>
             </router-link>
             <div v-if="!this.$session.exists('isLogged')" class="side-button unlogged-button">
@@ -205,7 +205,7 @@
         
         .ticon-geomia{
             display: block;
-            color: $ta-green;
+            color: $ta-light-blue;
             font-size: 50px;
             margin-bottom: 40px;
         }
