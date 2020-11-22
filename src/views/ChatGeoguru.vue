@@ -60,12 +60,9 @@ export default {
         </v-container>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 
 
-    .ticon-geomia{
-        display: none;
-    }
 
     h3{
         color: $ta-green;

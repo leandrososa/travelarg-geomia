@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Navigation></Navigation>
+    <Navigation v-if="$route.path != '/contratargeoguru' &&  $route.path != '/geogurucontratado'"></Navigation>
     <v-main>
       <GeomiaHeader></GeomiaHeader>
       <transition name="fade">

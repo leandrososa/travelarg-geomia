@@ -65,7 +65,7 @@ export default {
 <style lang="scss">
 
 
-    nav{
+    /* nav{
         display: none;
 
         &.nav + main{
@@ -75,7 +75,7 @@ export default {
         &.nav + main  header{
             left: 0px;
         }
-    }
+    } */
 
     h1{
         font-size: 36px;

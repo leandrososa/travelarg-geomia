@@ -40,8 +40,8 @@
         </v-container>
     </div>
 </template>
-<style lang="scss">
-    nav{
+<style lang="scss" scoped>
+    /* nav{
         display: none;
 
         &.nav + main{
@@ -51,7 +51,7 @@
         &.nav + main  header{
             left: 0px;
         }
-    }
+    } */
 
     h1{
         text-align: center;
