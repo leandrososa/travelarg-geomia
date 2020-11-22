@@ -38,7 +38,7 @@
                             <img src="../assets/geogurus/estela.png" alt="Estela M.">
                         </div>
                         <p class="guru-extract">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae sed vitae, est pulvinar dui egestas tristique. Nunc tempor lacus egestas odio accumsan ac cras. Id nibh mauris, volutpat praesent. Ultrices diam, a, dui eget odio eget aliquam ac. Turpis aliquam vel quisque in commodo proin. Commodo arcu quisque pharetra a vitae eu sapien. Facilisis quam aliquam tortor, curabitur amet nisl. Adipiscing commodo pretium, cum euismod massa. Tortor viverra feugiat sapien feugiat turpis eget. Pellentesque consectetur mauris enim cras. Lorem velit mi eros, turpis ipsum mauris. 
+                            ¿Como v&aacute;? Comence a hacer esqu&iacute; a los 20 años, practicando en el equipo de la municipalidad de Bariloche. Fui campeona sudamericana de biatlón siete veces, la última de ellas en agosto de 2017 en Chile. Hoy en dia me dedico a dar a conocer destinos invernales, ya que la nieve esta muy ligada a mi pasión.
                         </p>
                     </v-col>
                     <v-col cols="8">
