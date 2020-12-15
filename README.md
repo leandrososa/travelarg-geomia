@@ -9,8 +9,13 @@
     </a>&nbsp;
     <img alt="Vue version 2.x" src="https://erguotou520.github.io/vue-version-badge/vue2.x.svg">
 </p>
+<p align="center">
+    <img alt="" src="doc/mockup.png">
+</p>
 
-Geomia is part of a fictitious project for our capstone in Multimedia Design degree. It's a webapp for travel and review information about destinations in argentinian territory. Made w/ **Vue.js** and **Vuetify** framework.
+**Geomia** is part of a fictitious project for our capstone in Multimedia Design degree. It's a webapp for travel and review information about destinations in argentinian territory. Made w/ **Vue.js** and **Vuetify** framework.
+
+[✈️ Visit website](https://geomia.netlify.app)
 
 ## Project setup
 ```
