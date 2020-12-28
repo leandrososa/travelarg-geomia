@@ -172,7 +172,9 @@ export default {
               Recib&iacute; consejo profesional y aprovech&aacute; tus
               vacaciones al 100%
             </h5>
-            <Button to="/geogurus" xlarge padding color="success">Ver más</Button>
+            <Button to="/geogurus" xlarge padding color="success"
+              >Ver más</Button
+            >
           </v-col>
         </v-row>
       </v-container>
@@ -220,8 +222,6 @@ export default {
     </section>
   </div>
 </template>
-
-
 
 <style lang="scss" scoped>
 section {

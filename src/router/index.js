@@ -69,9 +69,9 @@ const routes = [
     name: "GeoguruContratado",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/GeoguruContratado.vue")
-  }
-  
-  ,{
+  },
+
+  {
     path: "/nuevaresena",
     name: "NuevaResena",
     component: () =>

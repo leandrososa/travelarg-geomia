@@ -33,19 +33,17 @@
                 con la Argentina y con Brasil", agreg&oacute; el mandatario de
                 Uruguay, que tiene menos de dos mil casos desde el inicio de la
                 pandemia.
-            </p>
-            <blockquote>
-                Hoy no estamos con las condiciones
-                de asegurar que vamos a tener las fronteras abiertas con la
-                Argentina y con Brasil.
-            </blockquote>
-            <br>
-            <p>
-                Lacalle dijo que
-                trabaja en una estrategia para permitir "alg&uacute;n tipo de
-                ingreso de turistas para que la temporada no sea un fracaso".
-                Una posibilidad es permitir el ingreso de turistas de
-                determinados pa&iacute;ses o regiones con poca
+              </p>
+              <blockquote>
+                Hoy no estamos con las condiciones de asegurar que vamos a tener
+                las fronteras abiertas con la Argentina y con Brasil.
+              </blockquote>
+              <br />
+              <p>
+                Lacalle dijo que trabaja en una estrategia para permitir
+                "alg&uacute;n tipo de ingreso de turistas para que la temporada
+                no sea un fracaso". Una posibilidad es permitir el ingreso de
+                turistas de determinados pa&iacute;ses o regiones con poca
                 circulaci&oacute;n del virus, todos con un test antes del
                 ingreso al pa&iacute;s o una especie de cuarentena".
                 <br /><br />Como explic&oacute; al medio La Pol&iacute;tica
@@ -120,137 +118,146 @@
       </v-container>
     </section>
     <div class="social-links">
-        <a href="#" class="social-link fb" v-ripple><span class="ticon-facebook"></span></a>
-        <a href="#" class="social-link tw" v-ripple><span class="ticon-twitter"></span></a>
-        <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" class="social-link wh" v-ripple><span class="ticon-whatsapp"></span></a>
+      <a href="#" class="social-link fb" v-ripple
+        ><span class="ticon-facebook"></span
+      ></a>
+      <a href="#" class="social-link tw" v-ripple
+        ><span class="ticon-twitter"></span
+      ></a>
+      <a
+        href="whatsapp://send?text=The text to share!"
+        data-action="share/whatsapp/share"
+        class="social-link wh"
+        v-ripple
+        ><span class="ticon-whatsapp"></span
+      ></a>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-    section.article{
-        .article-title{
-            font-size: 42px;
-            font-weight: 500;
-            line-height: 48px;
-        }
-        .article-extract{
-            font-weight: 400;
-            font-style: italic;
-            font-size: 24px;
-            line-height: 28px;
-        }
+section.article {
+  .article-title {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .article-extract {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28px;
+  }
 
-        .article-main-image{
-            border-radius: $br-normal;
-            position: relative;
-            padding-top: 50%;
-            overflow: hidden;
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width:100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center center;
-            }
-        }
-
-        .article-main{
-            p{
-                font-family: $opensans;
-            }
-            blockquote{
-                font-weight: 600;
-                font-size: 24px;
-                &:before{
-                    content: '\201C'
-                }
-                &:after{
-                    content: '\201D'
-                }
-            }
-        }
+  .article-main-image {
+    border-radius: $br-normal;
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
+  }
 
-    section.last-articles {
-        .article-item {
-            display: block;
-            width: 100%;
-            text-decoration: none;
-            color: $ta-green;
-            .article-image {
-            overflow: hidden;
-            border-radius: $br-normal;
-            height: 100%;
-            position: relative;
-            padding-top: 65%;
-            img {
-                width: 100%;
-                display: block;
-                margin: 0;
-                height: 100%;
-                object-fit: cover;
-                object-position: center center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-            }
-            .article-title {
-            color: $bl;
-            font-weight: 600;
-            font-size: 18px;
-            }
-        }
+  .article-main {
+    p {
+      font-family: $opensans;
     }
+    blockquote {
+      font-weight: 600;
+      font-size: 24px;
+      &:before {
+        content: "\201C";
+      }
+      &:after {
+        content: "\201D";
+      }
+    }
+  }
+}
 
-    .social-links{
-
-        position: fixed;
+section.last-articles {
+  .article-item {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: $ta-green;
+    .article-image {
+      overflow: hidden;
+      border-radius: $br-normal;
+      height: 100%;
+      position: relative;
+      padding-top: 65%;
+      img {
+        width: 100%;
+        display: block;
+        margin: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
         right: 0;
-        bottom: 10vh;
-
-        .social-link{
-            border-radius: 50% 0 0 50%;
-            display: block;
-            margin: 10px 0;
-            padding: 10px 0 10px 10px;
-            text-decoration: none;
-            text-align: center;
-            width: 42px;
-            height: 45px;
-            color: $wh;
-
-            &.fb{
-                background-color: #3B5998;
-                span{
-                    vertical-align: middle;
-                }
-            }
-
-            &.tw{
-                background-color: #00ACEE;
-                span{
-                    font-size: 15px;
-                }
-            }
-
-            &.wh{
-                background-color: #25D366;
-                span{
-                    font-size: 19px;
-                }
-            }
-
-            span{
-                color: $wh;
-                font-size: 18px;
-            }
-        }
+        bottom: 0;
+      }
     }
+    .article-title {
+      color: $bl;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
+
+.social-links {
+  position: fixed;
+  right: 0;
+  bottom: 10vh;
+
+  .social-link {
+    border-radius: 50% 0 0 50%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 42px;
+    height: 45px;
+    color: $wh;
+
+    &.fb {
+      background-color: #3b5998;
+      span {
+        vertical-align: middle;
+      }
+    }
+
+    &.tw {
+      background-color: #00acee;
+      span {
+        font-size: 15px;
+      }
+    }
+
+    &.wh {
+      background-color: #25d366;
+      span {
+        font-size: 19px;
+      }
+    }
+
+    span {
+      color: $wh;
+      font-size: 18px;
+    }
+  }
+}
 </style>
