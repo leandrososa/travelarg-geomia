@@ -2,12 +2,17 @@
 import Button from "@/components/Button.vue";
 import PlaceCard from "@/components/map/PlaceCard.vue";
 import json from "@/json/resenas.json";
+import {MglMap, MglMarker} from 'vue-mapbox'
+
 
 export default {
   data() {
     return {
       isOpen: false,
-      resenas: json
+      resenas: json,
+      accessToken: 'pk.eyJ1Ijoic29zYWxlYW5kcm8iLCJhIjoiY2tkYXhqdGdiMDZhbTJycDkydDVsNWl0MSJ9.EmQuLLcGrv4q2YXy_IHisA',
+      mapStyle: 'mapbox://styles/sosaleandro/ckdaxndeb004e1imts2wud13m',
+      markerCoordinates: '[-41.142,-71.297]'
     };
   },
   methods: {
@@ -20,7 +25,9 @@ export default {
   },
   components: {
     Button,
-    PlaceCard
+    PlaceCard,
+    MglMap,
+    MglMarker
   }
 };
 </script>
@@ -305,7 +312,27 @@ export default {
           </div>
         </div>
       </v-container>
+      <MglMap
+        container="map-test"
+        :center.sync="center"
+        :accessToken="accessToken"
+        :mapStyle="mapStyle"
+        style="position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+"
+      >
+
+        <MglMarker
+          :coordinates="markerCoordinates"
+          color='green'
+        >
+        <v-icon slot="marker">mdi-map-marker</v-icon>
+        </MglMarker>
+      </MglMap>
     </section>
+    
     <section class="specialized-gurus">
       <v-container>
         <v-row align="center">
@@ -486,7 +513,7 @@ section.faq {
 }
 
 section.destination-map {
-  background-image: url("../assets/fake-map.png");
+  
   height: 100vh;
   background-size: cover;
   background-position: center center;
